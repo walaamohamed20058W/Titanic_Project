@@ -1,53 +1,20 @@
-# Titanic Project 🚢
+# Titanic Project
 
-This project analyzes the famous Titanic dataset to explore passenger survival factors.  
-It includes data cleaning, preprocessing, visualization, and basic machine learning steps.  
+## Overview
+This project analyzes the Titanic dataset using Python. The goal is to understand passenger data, handle missing values, and visualize key insights.
 
-## Project Structure
+## Dataset
+The dataset used is `titanic.csv` and includes columns such as PassengerId, Name, Age, Sex, Pclass, SibSp, Parch, Ticket, Fare, Cabin, Embarked, Survived.
 
-Titanic_Project/
-- titanic.csv              # Dataset
-- titanic_project.py       # Main Python code
-- README.md                # Project documentation
-
-## Technologies Used
-
-- Python 🐍  
-- Pandas  
-- NumPy  
-- Matplotlib / Seaborn  
-- Scikit-learn  
-
-## Steps in the Project
-
-1. Load and explore the Titanic dataset  
-2. Handle missing values (Age, Embarked, etc.)  
-3. Drop unnecessary columns (like Cabin)  
-4. Convert categorical data into numerical form  
-5. Visualize survival patterns  
-6. Train a simple Machine Learning model  
+## Project Steps
+1. Import Libraries: pandas, numpy, matplotlib, seaborn
+2. Load Dataset: df = pd.read_csv("titanic.csv")
+3. Data Cleaning: Fill missing Age with median, Embarked with mode, drop Cabin column
+4. Data Exploration: Count survived vs non-survived, visualize Age and Fare distributions
+5. Conclusions: Summary of findings and insights
 
 ## How to Run
+Open `titanic_project.ipynb` in Jupyter Notebook and run each cell sequentially. Ensure `titanic.csv` is in the same folder as the notebook.
 
-1. Clone this repository:
-```
-git clone https://github.com/username/Titanic_Project.git
-```
-2. Open the project folder:
-```
-cd Titanic_Project
-```
-3. Install the required libraries:
-```
-pip install pandas numpy matplotlib seaborn scikit-learn
-```
-4. Run the Python script:
-```
-python titanic_project.py
-```
-
-## Results
-
-- Cleaned and preprocessed Titanic dataset  
-- Visualizations showing survival trends (e.g., by gender, class, age)  
-- A basic prediction model to estimate survival probability  
+## Author
+Walaa Mohamed
